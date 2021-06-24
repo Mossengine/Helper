@@ -1,0 +1,51 @@
+{
+  "name": "mossengine/helper",
+  "type": "library",
+  "description": "PHP Class that streamlines usages of static method helpers without needing to load in or define all the helper classes",
+  "keywords": [
+    "helpers"
+  ],
+  "homepage": "https://github.com/Mossengine/helper",
+  "support": {
+    "issues": "https://github.com/Mossengine/helper/issues",
+    "source": "https://github.com/Mossengine/helper"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Brendon Moss",
+      "email": "brenmoss@mossengine.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "ramsey/uuid": "^3.4.1",
+    "illuminate/support": "^5.2.32",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "~2",
+    "phpunit/phpunit": "~4.0 || ~5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mossengine\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "test": [
+      "@phpunit",
+      "@phpcs"
+    ],
+    "phpunit": "phpunit",
+    "phpcs": "php-cs-fixer fix -v --diff --dry-run"
+  }
+}
