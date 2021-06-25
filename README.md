@@ -47,7 +47,7 @@ $ composer require mossengine/helper
 require 'vendor/autoload.php';
 
 // Call the Test method on the Test helper class
-$result = Mossengine\Helper::Test()::Test();
+$result = Mossengine\Helper::Test()->Test();
 ```
 
 ## Helpers
